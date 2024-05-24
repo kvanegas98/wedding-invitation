@@ -27,21 +27,3 @@ Si no tienes Create React App instalado globalmente, ejecuta:
 4. Iniciar la Aplicación
 Una vez que todas las dependencias estén instaladas, inicia la aplicación React en modo de desarrollo con:
 ```npm start```
-
-### Uso de Docker
-
-Si prefieres utilizar Docker, estos son los pasos que debes seguir:
-
-1. Construir la Imagen Docker
-Desde la raíz del proyecto, ejecuta el siguiente comando para construir la imagen Docker:
-
-```docker build -t front-red-efectiva .```
-
-2. Ejecutar el Contenedor Docker
-Después de construir la imagen, ejecuta el contenedor Docker de la aplicación con:
-
-```docker run -p 3000:3000 front-red-efectiva```
-
-Accede a la aplicación desde tu navegador en la dirección: http://localhost:3000.
-
-Este comando instalará todas las dependencias necesarias para el proyecto.
