@@ -21,7 +21,7 @@ const CoupleSection = () => {
           <div className="couple">
             <img src={groomPhoto} alt="Groom" />
             <h3>Kevin Vanegas</h3>
-            <span>Novio</span>
+            <span>Padres del novio</span>
             <p>Javier Vanegas</p>
             <p>Yorlene Fariñas</p>
 
@@ -30,7 +30,7 @@ const CoupleSection = () => {
             <i className="fas fa-heart"></i>
             <img src={bridePhoto} alt="Bride" />
             <h3>Isa Carrillo</h3>
-            <span>Novia</span>
+            <span>Padres de la novia</span>
             <p>Benjamin Carrillo</p>
             <p>Maria C. Torres</p>
           </div>
