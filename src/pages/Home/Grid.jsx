@@ -13,7 +13,8 @@ const GridLayout = () => {
 
     return (
         <>
-             <Header />
+        <div translate="no">
+        <Header/>
              <AutoPlayer />
              <CountdownTimer />
              <CoupleSection />
@@ -22,6 +23,8 @@ const GridLayout = () => {
              <GiftTable />
              <Gallery />
              <Footer />
+        </div>
+            
             
         </>
     );
