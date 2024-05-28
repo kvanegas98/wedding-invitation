@@ -1,9 +1,10 @@
 import React from 'react';
 import clothes from '../../assets/images/gallery/clothes.png';
 import noChildren from '../../assets/images/gallery/children.png';
-
+import AnimatedSection from '../Animations/Animation';
 const Protocol = () => {
     return (
+        <AnimatedSection animationClass="fade-in">
         <div className="container">
             <div className="couple-section">
                 <div className="row">
@@ -23,6 +24,7 @@ const Protocol = () => {
                 </div>
             </div>
         </div>
+        </AnimatedSection>
     );
 }
 

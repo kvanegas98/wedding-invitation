@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import AnimatedSection from '../Animations/Animation';
 const CountdownTimer = () => {
     const targetDate = new Date('September 7, 2024 16:00:00').getTime();
 
@@ -33,6 +33,7 @@ const CountdownTimer = () => {
 
     return (
         <div>
+             <AnimatedSection animationClass="movement">
             <section className="couple-section" data-scroll-index="1">
                 <div className="row">
                     <div className="textobiblico">
@@ -63,7 +64,7 @@ const CountdownTimer = () => {
                     </div>
                 </div>
             </section>
-         
+            </AnimatedSection>
         </div>
     );
 }

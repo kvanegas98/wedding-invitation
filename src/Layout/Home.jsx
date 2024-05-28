@@ -3,7 +3,7 @@ import photo from '../assets/images/gallery/Isa.jpeg';
 import photo2 from '../assets/images/gallery/juntos.jpeg';
 import photo3 from '../assets/images/gallery/ometepe.jpeg';
 
-const Header = () => {
+const Home = () => {
   const slides = [
     photo,
     photo2
@@ -21,9 +21,8 @@ const Header = () => {
 
   return (
     <div>
-    
       {/* Home Section Start */}
-      <section className="home-section" data-scroll-index="0">
+      <section  className="home-section" data-scroll-index="0">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -36,15 +35,24 @@ const Header = () => {
                   <h1>Kevin & Isa</h1>
                   <br />
                   <span>Nos casamos</span>
+                  
+                  <div className="scroll-down-indicator">
+                    <div className="mouse-icon">
+                      <div className="mouse-wheel"></div>
+                    </div>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
         ))}
+        {/* Indicator for scrolling down */}
+
       </section>
       {/* Home Section End */}
     </div>
   );
 }
 
-export default Header;
+export default Home;

@@ -313,6 +313,7 @@ footer {
   padding: 0 60px;
   text-align: center;
   position: relative;
+  transition: all 1s ease-in-out;
 }
 .couple-section .textobiblico h3 {
   font-size: 40px;
@@ -321,6 +322,7 @@ footer {
   font-weight: normal;
   letter-spacing: 2px;
   color: #A5AA9C !important;
+  transition: all 1s ease-in-out;
 }
 
 .couple-section .textobiblico h2 {
@@ -330,6 +332,64 @@ footer {
   font-weight: normal;
   letter-spacing: 2px;
   color: #657150 !important;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 2s ease-in-out forwards;
+}
+
+@keyframes desplazar {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+.movement {
+  animation: desplazar 2s ease-out;
+}
+
+.rotate {
+  animation: rotate 2s linear;
+}
+.scale-up {
+  animation: scaleUp 2s ease-out;
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.bounce {
+  animation: bounce 1s ease-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 /* Couple Section CSS */
 .couple-section {
@@ -1280,3 +1340,192 @@ container {
 .image-container.active {
   transform: translateX(-100%); /* Desplaza la imagen activa fuera del área visible */
 }
+
+
+/* form */
+/* ConfirmationForm.css */
+
+.rsvp-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+  /* font-family: Arial, sans-serif; */
+  background: #828876;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.search-section, .confirmation-section, .already-confirmed-section {
+  text-align: center;
+}
+
+.form-letter {
+  color: white;
+  font-family: "Great Vibes", cursive !important;
+  font-size: 30px !important;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.textarea-field {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-button, .submit-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #A5AA9C;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover, .submit-button:hover {
+  background-color: #657150;
+}
+
+.invitados-list {
+  margin: 20px 0;
+  text-align: left;
+  color: #fff !important;
+}
+
+.invitado {
+  padding: 10px;
+  border-bottom: 1px solid #A5AA9C;
+}
+
+.invitado-nombre {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.radio-label {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #fff;
+}
+
+
+/* SwwetAlert */
+.my-swal-title {
+  color: white; /* Cambiar el color del título */
+}
+.swal2-html-container {
+  color: white !important; /* Cambia el color del contenido a verde */
+}
+.swal2-confirm {
+  background-color: blue; /* Cambia el color de fondo del botón a azul */
+  color: white; /* Cambia el color del texto del botón a blanco */
+}
+
+.my-swal-icon {
+  color: white; /* Cambiar el color del icono */
+}
+
+.swal2-popup {
+  background-color: #A5AA9C; /* Cambia el color de fondo a gris claro */
+}
+
+
+
+/* Estilos CSS */
+/* Estilos CSS */
+.home-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.mouse-icon {
+  position: relative;
+  width: 24px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: mouse-fade 5s infinite;
+}
+
+.mouse-wheel {
+  width: 4px;
+  height: 10px;
+  background: #fff;
+  border-radius: 2px;
+  animation: mouse-scroll 1s infinite;
+}
+
+.scroll-text {
+  margin-top: 10px;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+@keyframes mouse-fade {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+

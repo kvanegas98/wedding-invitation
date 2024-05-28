@@ -1,8 +1,9 @@
 import React from 'react';
 import gitftable from '../../assets/images/gallery/gitftable.png';
-
+import AnimatedSection from '../Animations/Animation';
 const GiftTable = () => {
     return (
+        <AnimatedSection animationClass="bounce">
         <div className="container">
             <div className="couple-section">
                 <div className="row">
@@ -16,6 +17,7 @@ const GiftTable = () => {
                 </div>
             </div>
         </div>
+        </AnimatedSection>
     );
 }
 

@@ -9,27 +9,20 @@ const handleErrors = (error) => {
   return null;
 };
 
-export const getDataPosts = async () => {
+
+export const sendResponse = async (data) => {
   try {
-    const response = await api.get('posts');
+    const response = await api.post('Boda/Crear',data);
     return response.data;
   } catch (error) {
     return handleErrors(error);
   }
 };
 
-export const getDataUsers = async () => {
-  try {
-    const response = await api.get('users');
-    return response.data;
-  } catch (error) {
-    return handleErrors(error);
-  }
-};
 
-export const getAllDataPostsById = async (id) => {
+export const getWeddingByCode = async (code) => {
   try {
-    const response = await api.get(`posts?userId=${id}`);
+    const response = await api.get(`Boda/getWeddingByCode/${code}`);
     return response.data;
   } catch (error) {
     return handleErrors(error);

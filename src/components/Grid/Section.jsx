@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import groomPhoto from '../../assets/images/gallery/Kevin.jpeg';
 import bridePhoto from '../../assets/images/gallery/ise.jpeg';
+import AnimatedSection from '../Animations/Animation';
 
 const CoupleSection = () => {
   return (
+    <AnimatedSection animationClass="scale-up">
     <section className="couple-section" data-scroll-index="1">
       <div className="container">
         <div className="row">
           <div className="textobiblico">
             <h3>1 Corintios 13:7.</h3>
-            <p>El amor nunca se dara por vencido, jamás pierda la fe, siempre tiene esperanzas y se mantiente firme en todas las circuntancias</p>
+            <p>El amor nunca se da por vencido, jamás pierde la fe, siempre tiene esperanzas y se mantiene firme en toda circunstancia.</p>
           </div>
         </div>
         <div className="row">
@@ -37,6 +39,7 @@ const CoupleSection = () => {
         </div>
       </div>
     </section>
+    </AnimatedSection>
   );
 }
 
