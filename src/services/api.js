@@ -6,7 +6,7 @@ const api = axios.create({
 
 const handleErrors = (error) => {
   console.error('Error:', error);
-  return null;
+  return error;
 };
 
 

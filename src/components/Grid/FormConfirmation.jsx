@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import swal from 'sweetalert2';
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import { getWeddingByCode, sendResponse } from '../../services/api';
-import AnimatedSection from '../Animations/Animation';
 
 const ConfirmationForm = () => {
     const [name, setName] = useState('');
@@ -20,7 +18,8 @@ const ConfirmationForm = () => {
         try {
             name.trim();
             const response = await getWeddingByCode(name);
-            if (response) {
+            console.log(response)
+            if (response.invitadosVista) {
                 setGuest(response);
                 setInvitados(response.invitadosVista || []);
                 setIsConfirmed(response.confirmado);
@@ -29,13 +28,24 @@ const ConfirmationForm = () => {
             } else {
                 setGuest(null);
                 setInvitados([]);
+                swal.fire({
+                    title: 'Error',
+                    text: response.response.data.message,
+                    icon: 'error',
+                    customClass: {
+                        title: 'my-swal-title',
+                        icon: 'my-swal-icon'
+                    }
+                });
+    
             }
         } catch (error) {
+            console.log('**',error)
             setGuest(null);
             setInvitados([]);
             swal.fire({
                 title: 'Error',
-                text: error.response.data.message,
+                text: error,
                 icon: 'error',
                 customClass: {
                     title: 'my-swal-title',
@@ -86,7 +96,6 @@ const ConfirmationForm = () => {
             const responseArray = Object.values(responses);
             const data = cleanUpArray(responseArray);
             console.log(data)
-            //  const response = await axios.post(`https://localhost:44388/api/Boda/Crear/`, data);
             const response = await sendResponse(data);
             if (data.length != invitados.length) {
                 swal.fire({
@@ -138,7 +147,6 @@ const ConfirmationForm = () => {
     const isButtonDisabled = name.trim() === '';
 
     return (
-        <AnimatedSection animationClass="bounce">
         <div className="rsvp-form">
             {viewForm && (
                 <div className="search-section">
@@ -234,7 +242,6 @@ const ConfirmationForm = () => {
 
 
         </div>
-        </AnimatedSection>
     );
 };
 
