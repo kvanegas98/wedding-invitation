@@ -521,7 +521,7 @@ footer {
   max-width: 150px;
   width: 100%;
   border-radius: 50%;
-  border: 10px solid transparent;
+  border: 5px solid #A5AA9C;
 }
 .couple-section .protocol h3 {
   font-size: 40px;
@@ -568,6 +568,7 @@ footer {
   width: 100%;
   border-radius: 50%;
   border: 10px solid transparent;
+    border: 5px solid #A5AA9C;
 }
 .couple-section .gifttable h3 {
   font-size: 40px;

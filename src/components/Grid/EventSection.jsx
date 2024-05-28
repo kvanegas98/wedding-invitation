@@ -68,7 +68,7 @@ const EventSection = () => {
                         <div className="event-item-inner">
                             <h3>Recepción</h3>
                             <span className="date">7 Septiembre 2024</span>
-                            <span className="time">04:00 PM - 9:PM</span>
+                            <span className="time">04:00 PM - 9:00PM</span>
                             <p>Hotel Contempo</p>
                             <p>Carretera a Masaya, km. 11 carretera a Masaya 400 metros oeste</p>
                             <button className="map-button" onClick={openMap}>

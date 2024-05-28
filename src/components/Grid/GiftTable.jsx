@@ -10,8 +10,8 @@ const GiftTable = () => {
                     <div className="row">
                     <div className="gifttable">
                             <img  src={gitftable} alt="gift" />
-                            <h3>Mesa de regalos</h3>
-                            <p>Tu compañia es nuestro mejor regalo, pero si tienes la intención de hacernos un obsequio, encontrarás un buzón el día del evento</p>
+                            <h3>Regalos</h3>
+                            <p>Nos complace invitarlos a compartir con nosotros uno de los momentos más especiales de nuestras vidas. No contamos con mesa de regalos, sin embargo, les pedimos que nos acompañen en este día único y, si lo desean, puedan demostrar su cariño y apoyo mediante una lluvia de sobres. Será un honor contar con su presencia.</p>
                         </div>
                     </div>
                 </div>

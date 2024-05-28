@@ -21,8 +21,10 @@ const GridLayout = () => {
                 <EventSection />
                 <Protocol />
                 <GiftTable />
-                <FormConfirmation />
                 <Gallery />
+                <FormConfirmation />
+                <br />
+                <br />
                 <Footer />
             </div>
 
