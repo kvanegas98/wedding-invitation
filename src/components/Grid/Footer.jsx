@@ -3,7 +3,7 @@ import flower from '../../assets/images/gallery/6214174.jpg';
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: '#A5AA9C'}} className="footer">
+    <footer style={{ backgroundColor: '#8FADDD'}} className="footer">
     <div className="container">
       <div className="row">
         <div className="footer-content">

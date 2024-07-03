@@ -321,7 +321,7 @@ footer {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
   letter-spacing: 2px;
-  color: #A5AA9C !important;
+  color: #8FADDD !important;
   transition: all 1s ease-in-out;
 }
 
@@ -447,7 +447,7 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   /* letter-spacing: 2px; */
-  /* color: #A5AA9C !important; */
+  /* color: #8FADDD !important; */
 }
 
 .couple-section .couple p {
@@ -521,7 +521,7 @@ footer {
   max-width: 150px;
   width: 100%;
   border-radius: 50%;
-  border: 5px solid #A5AA9C;
+  border: 5px solid #8FADDD;
 }
 .couple-section .protocol h3 {
   font-size: 40px;
@@ -529,7 +529,7 @@ footer {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
   letter-spacing: 2px;
-  color: #A5AA9C !important;
+  color: #8FADDD !important;
 }
 
 
@@ -568,7 +568,7 @@ footer {
   width: 100%;
   border-radius: 50%;
   border: 10px solid transparent;
-    border: 5px solid #A5AA9C;
+    border: 5px solid #8FADDD;
 }
 .couple-section .gifttable h3 {
   font-size: 40px;
@@ -576,7 +576,7 @@ footer {
   font-family: "Great Vibes", cursive;
   font-weight: normal;
   letter-spacing: 2px;
-  color: #A5AA9C !important;
+  color: #8FADDD !important;
 }
 
 /* Story Section CSS */
@@ -742,7 +742,7 @@ footer {
   margin: 0;
 }
 .event-section .event-item-inner img {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   box-shadow: 0 0 10px #888888;
   margin: 10px;
   border-radius: 5px;
@@ -1043,21 +1043,21 @@ footer {
 .couple-section .couple i.fa-heart,
 .header .nav ul li a.active,
 .header .nav ul li a:hover {
-    color: #A5AA9C;
+    color: #8FADDD;
 }
 
 .btn-1,
 .couple-section .couple img,
 .event-section .event-item-inner:before,
 .couple-section .couple .social-icons a i {
-    border-color: #A5AA9C;
+    border-color: #8FADDD;
 }
 
 .event-section,
 .rsvp-section,
 .btn-1,
 .couple-section .couple .social-icons a:hover i {
-    background-color: #A5AA9C;
+    background-color: #8FADDD;
 }
 
 
@@ -1070,7 +1070,7 @@ footer {
 }
 
 .countdown div {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   border: 2px solid #657150;
   border-radius: 10px;
   margin: 10px;
@@ -1147,7 +1147,7 @@ footer {
 }
 
 .audio-controls .play-button {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   border: none;
   color: white;
   padding: 10px;
@@ -1190,7 +1190,7 @@ footer {
   -webkit-appearance: none;
   width: 12px;
   height: 12px;
-  background: #A5AA9C;
+  background: #8FADDD;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1198,7 +1198,7 @@ footer {
 .audio-controls input[type="range"]::-moz-range-thumb {
   width: 12px;
   height: 12px;
-  background: #A5AA9C;
+  background: #8FADDD;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1211,7 +1211,7 @@ footer {
  /* end audio */
 
 .map-button {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -1236,7 +1236,7 @@ container {
 }
 
 .card {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   border-radius: 5px;
@@ -1250,7 +1250,7 @@ container {
 }
 
 .card-header {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   color: white;
   padding: 10px;
   border-top-left-radius: 5px;
@@ -1292,7 +1292,7 @@ container {
 }
 
 .card {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   border-radius: 5px;
@@ -1306,7 +1306,7 @@ container {
 }
 
 .card-header {
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   color: white;
   padding: 10px;
   border-top-left-radius: 5px;
@@ -1352,7 +1352,7 @@ container {
   padding: 20px;
   margin-top: 50px;
   /* font-family: Arial, sans-serif; */
-  background: #828876;
+  background: #8FADDD;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -1386,7 +1386,7 @@ container {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  background-color: #A5AA9C;
+  background-color: #8FADDD;
   border: none;
   color: white;
   font-size: 16px;
@@ -1407,7 +1407,7 @@ container {
 
 .invitado {
   padding: 10px;
-  border-bottom: 1px solid #A5AA9C;
+  border-bottom: 1px solid #8FADDD;
 }
 
 .invitado-nombre {
@@ -1440,7 +1440,7 @@ container {
 }
 
 .swal2-popup {
-  background-color: #A5AA9C; /* Cambia el color de fondo a gris claro */
+  background-color: #8FADDD; /* Cambia el color de fondo a gris claro */
 }
 
 

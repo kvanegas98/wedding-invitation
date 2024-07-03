@@ -23,7 +23,7 @@ const Gallery = () => {
             <div className="container">
                 <div className="row">
                     <div className="section-title">
-                        <h2 style={{ color: '##A5AA9C' }}>Galeria</h2>
+                        <h2 style={{ color: '##8FADDD' }}>Galeria</h2>
                     </div>
                 </div>
                 <div className="row">
