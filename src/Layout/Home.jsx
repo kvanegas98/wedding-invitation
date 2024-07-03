@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import photo from '../assets/images/gallery/Isa.jpeg';
-import photo2 from '../assets/images/gallery/juntos.jpeg';
-import photo3 from '../assets/images/gallery/ometepe.jpeg';
+import photo from '../assets/images/Preboda/DSC00397.jpg';
+import photo2 from '../assets/images/Preboda/DSC00408.jpg';
+import photo3 from '../assets/images/Preboda/DSC00410.jpg';
 
 const Home = () => {
   const slides = [

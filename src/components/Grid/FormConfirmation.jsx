@@ -150,7 +150,7 @@ const ConfirmationForm = () => {
         <div className="rsvp-form">
             {viewForm && (
                 <div className="search-section">
-                    <h1 className="form-letter" style={{ fontSize: '30px !important' }}>Confirmación</h1>
+                    <h1 className="form-letter" style={{ fontSize: '45px !important' }}>Confirmación</h1>
                     <p style={{ color: 'white', fontSize: '17px', fontFamily: 'sans-serif' }}>Ingresa tu código invitado y da click en buscar</p>
                     <input
                         type="text"

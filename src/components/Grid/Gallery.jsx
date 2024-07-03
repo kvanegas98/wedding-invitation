@@ -1,9 +1,10 @@
-import React from 'react';
-import '../../assets/images/couple-1.jpg'
-import photo1 from '../../assets/images/couple-1.jpg';
-import photo2 from '../../assets/images/couple-2.jpg';
-import photo3 from '../../assets/images/couple-3.jpg';
-
+import React, { useState } from 'react';
+import 'react-awesome-lightbox/build/style.css'; // Importa los estilos de lightbox
+import Lightbox from 'react-awesome-lightbox';
+import photo1 from '../../assets/images/Preboda/DSC00397.jpg';
+import photo2 from '../../assets/images/Preboda/DSC00408.jpg';
+import photo3 from '../../assets/images/Preboda/DSC00410.jpg';
+import photo4 from '../../assets/images/Preboda/DSC00453.jpg';
 
 const Gallery = () => {
     // Array de objetos con la información de las imágenes
@@ -11,31 +12,44 @@ const Gallery = () => {
         { thumbnail: photo1, large: photo1 },
         { thumbnail: photo2, large: photo2 },
         { thumbnail: photo3, large: photo3 },
-        // { thumbnail: '../../assets/images/couple-2.jpg', large: '../../assets/images/couple-2.jpg' },
-        // { thumbnail: 'assets/img/gallery/thumb/3.jpg', large: 'assets/img/gallery/large/3.jpg' },
-        // { thumbnail: 'assets/img/gallery/thumb/4.jpg', large: 'assets/img/gallery/large/4.jpg' },
-        // { thumbnail: 'assets/img/gallery/thumb/5.jpg', large: 'assets/img/gallery/large/5.jpg' },
-        // { thumbnail: 'assets/img/gallery/thumb/6.jpg', large: 'assets/img/gallery/large/6.jpg' }
+        { thumbnail: photo4, large: photo4 },
     ];
+
+    const [isOpen, setIsOpen] = useState(false);
+    const [photoIndex, setPhotoIndex] = useState(0);
 
     return (
         <section className="gallery-section" data-scroll-index="4">
             <div className="container">
                 <div className="row">
                     <div className="section-title">
-                        <h2>Galeria</h2>
+                        <h2 style={{ color: '##A5AA9C' }}>Galeria</h2>
                     </div>
                 </div>
                 <div className="row">
                     {images.map((image, index) => (
                         <div key={index} className="gallery-item">
                             <div className="gallery-item-inner">
-                                <img src={image.thumbnail} alt="" data-large={image.large} />
+                                <img 
+                                    src={image.thumbnail} 
+                                    alt="" 
+                                    data-large={image.large}
+                                    onClick={() => { setIsOpen(true); setPhotoIndex(index); }}
+                                    style={{ cursor: 'pointer' }} 
+                                />
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
+
+            {isOpen && (
+                <Lightbox
+                    images={images.map(image => ({ url: image.large }))}
+                    startIndex={photoIndex}
+                    onClose={() => setIsOpen(false)}
+                />
+            )}
         </section>
     );
 }
