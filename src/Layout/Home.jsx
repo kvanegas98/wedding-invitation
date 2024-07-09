@@ -6,7 +6,7 @@ import photo3 from '../assets/images/Preboda/DSC00410.jpg';
 const Home = () => {
   const slides = [
     photo,
-    photo2
+   // photo2
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
