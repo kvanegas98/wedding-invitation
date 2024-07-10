@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import groomPhoto from '../../assets/images/PreBoda2/_DSC9329.jpeg';
+import groomPhoto from '../../assets/images/PreBoda2/Kevin.jpeg';
 import bridePhoto from '../../assets/images/gallery/ise.jpeg';
 import AnimatedSection from '../Animations/Animation';
 

@@ -11,9 +11,10 @@ const Protocol = () => {
                     <div className="row">
                         <div className="protocol">
                             <img  src={clothes} alt="Jaga jarak" />
-                            <h3>Código de Vestimenta</h3>
-                            <p>Por favor, únete a nosotros luciendo vestimenta formal. Nos encantaría que te vistas con tu mejor atuendo, pero por favor evita el color blanco, ya que reservamos ese color para los protagonistas del día. ¡Estamos emocionados de verte lucir increíble en nuestro día especial!</p>
-
+                            {/* <h3>Código de Vestimenta</h3> */}
+                            <h3>Dress Code</h3>
+                            {/* <p>Por favor, únete a nosotros luciendo vestimenta formal. Nos encantaría que te vistas con tu mejor atuendo, pero por favor evita el color blanco, ya que reservamos ese color para los protagonistas del día. ¡Estamos emocionados de verte lucir increíble en nuestro día especial!</p> */}
+                            <p>Formal</p>
                         </div>
                         <div className="protocol">
                             <img src={noChildren} alt="Bride" />
